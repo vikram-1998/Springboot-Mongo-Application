@@ -1,0 +1,36 @@
+#Gradle Template
+.gradle/
+build/
+
+#Java Template
+*.class
+.settings
+.classpath
+.project
+
+#Package Files
+*.war
+*.ear
+
+#Virtual Machine Crash Logs - See http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+#File Based Project Format
+*.ipr
+*.iws
+*.iml
+
+#Directory Based Project Format
+.idea/
+
+#IntelliJ
+/out/
+
+.app-src/tmp/
+bower_components/
+dist/
+node_modules/
+.tmp/
+*.log
+/bin/
+/target/
