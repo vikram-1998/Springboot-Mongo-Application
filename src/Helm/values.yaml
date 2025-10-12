@@ -1,0 +1,25 @@
+replicaCount: 2
+
+image:
+  repository: vikrampolollu/java-spring-mongo
+  tag: "28"
+  pullPolicy: IfNotPresent
+
+mongo:
+  username: production
+  password: production@123
+
+resources:
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  limits:
+    cpu: 400m
+    memory: 512Mi
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
+
+namespace: dev
